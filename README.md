@@ -32,26 +32,11 @@ VR is not supported.
 1. Open the Package Manager from Window > Package Manager
 2. "+" button > Add package from git URL
 3. Enter the following
-   * https://github.com/Haruma-K/URPGrabPass.git?path=/Assets/URPGrabPass
+   * https://github.com/IconGames/URPGrabPass.git?path=/Assets/URPGrabPass
 
 <p align="center">
   <img width=500 src="https://user-images.githubusercontent.com/47441314/126619790-da212335-08c6-4544-80fc-1bccd0e15a9b.png" alt="Package Manager">
 </p>
-
-
-Or, open Packages/manifest.json and add the following to the dependencies block.
-
-```json
-{
-    "dependencies": {
-        "com.harumak.urpgrabpass": "https://github.com/Haruma-K/URPGrabPass.git?path=/Assets/URPGrabPass"
-    }
-}
-```
-
-If you want to set the target version, specify it like follow.
-
-* https://github.com/Haruma-K/URPGrabPass.git?path=/Assets/URPGrabPass#1.0.0
 
 #### Setup Renderer Feature
 * Add the Grab Pass Renderer Feature from the inspector of the Forward Renderer Data.
