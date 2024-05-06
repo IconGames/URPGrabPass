@@ -41,11 +41,10 @@ namespace URPGrabPass.Runtime
                 var drawingSettings =
                     CreateDrawingSettings(_shaderTagIds, ref renderingData, _sortingCriteria);
                 context.DrawRenderers(renderingData.cullResults, ref drawingSettings, ref _filteringSettings);
-
-                context.ExecuteCommandBuffer(cmd);
-                cmd.Clear();
-                CommandBufferPool.Release(cmd);
             }
+            context.ExecuteCommandBuffer(cmd);
+            cmd.Clear();
+            CommandBufferPool.Release(cmd);
         }
     }
 }
